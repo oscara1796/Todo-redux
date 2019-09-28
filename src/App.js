@@ -1,5 +1,6 @@
 import React, {Fragment} from 'react';
 import TodoForm from "./TodoForm.js";
+import TodoList from "./TodoList.js";
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 
@@ -17,10 +18,7 @@ function App() {
       </Grid>
       <Grid container justify="center">
         <Grid item md={8}>
-          {/* <TodoList
-            todos={this.state.todos}
-            deleteTodo={this.deleteTodo}
-            isItCheckedBox={this.isItCheckedBox}/>*/}
+           <TodoList/>
         </Grid>
       </Grid>
     </Fragment>

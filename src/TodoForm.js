@@ -5,11 +5,12 @@ import {connect} from "react-redux";
 
 
 
-const TodoForm= ({value, updateValue}) =>{
+const TodoForm= ({value, updateValue, saveTodo}) =>{
   return(
     <form
       onSubmit={e =>{
         e.preventDefault();
+        saveTodo()
       }}>
       <TextField
         label="To do"
